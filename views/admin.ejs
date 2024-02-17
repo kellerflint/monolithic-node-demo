@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Page - Pizza Orders</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+
+<body>
+  <h1>Pizza Orders</h1>
+  <% if (orders.length > 0) { %>
+    <% orders.forEach(order => { %>
+      <div class="order-item">
+        <div>
+          Order ID: <%= order.id %>,
+          Size: <%= order.size %>,
+          Toppings: <%= order.toppings %>,
+          Crust: <%= order.crust %>
+        </div>
+        <form action="/delete-order" method="POST">
+          <input type="hidden" name="orderId" value="<%= order.id %>">
+          <button type="submit" class="delete-button">Delete</button>
+        </form>
+      </div>
+    <% }) %>
+  <% } else { %>
+  <p>No orders found.</p>
+  <% } %>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Customize Your Pizza</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/orderForm.css">
+</head>
+
+<body>
+    <h1>Order Your Custom Pizza</h1>
+    <form action="/submit-order" method="POST">
+        <label for="size">Size:</label>
+        <select name="size" id="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+        <br>
+        <label for="toppings">Toppings:</label>
+        <input type="text" id="toppings" name="toppings" placeholder="e.g., mushrooms, pepperoni">
+        <br>
+        <label for="crust">Crust:</label>
+        <select name="crust" id="crust">
+            <option value="regular">Regular</option>
+            <option value="thin">Thin</option>
+            <option value="deep">Deep Dish</option>
+        </select>
+        <br>
+        <button type="submit">Place Order</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+form {
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+}
+
+label {
+    margin-right: 10px;
+}
+
+select,
+input[type="text"] {
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+button:hover,
+button:focus {
+    background-color: #e9e9e9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+br {
+    margin: 10px;
+}

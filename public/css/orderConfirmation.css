@@ -1,0 +1,18 @@
+h1,
+h2 {
+    color: #444;
+}
+
+div {
+    background: #fff;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+}
+
+h2 {
+    margin-top: 30px;
+}
